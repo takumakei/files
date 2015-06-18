@@ -130,7 +130,7 @@ func filesAsync(base string) chan string {
 		os.Exit(1)
 	}
 	if !fi.IsDir() {
-		fmt.Fprintf(os.Stderr, "%q is not a directory")
+		fmt.Fprintf(os.Stderr, "%q is not a directory", base)
 		os.Exit(1)
 	}
 
